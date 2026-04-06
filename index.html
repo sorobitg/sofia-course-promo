@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofía Course Promo</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #7c3aed;
+      --secondary: #db2777;
+      --accent: #f59e0b;
+      --bg: #0f0f1a;
+      --text: #f3f4f6;
+      --card-bg: #1e1e2e;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.35) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+      animation: fadeDown 0.6s ease both;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #fff 30%, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: fadeDown 0.7s ease 0.1s both;
+    }
+
+    .hero p {
+      margin-top: 1.25rem;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: #a1a1b5;
+      max-width: 520px;
+      animation: fadeDown 0.7s ease 0.2s both;
+    }
+
+    .cta-btn {
+      margin-top: 2.25rem;
+      padding: 0.85rem 2.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      box-shadow: 0 4px 24px rgba(124, 58, 237, 0.45);
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: fadeDown 0.7s ease 0.3s both;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 32px rgba(124, 58, 237, 0.6);
+    }
+
+    /* ── Animated Reel ── */
+    .reel-section {
+      padding: 2rem 0 4rem;
+    }
+
+    .reel-section h2 {
+      text-align: center;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 700;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .reel-section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      margin: 0.6rem auto 0;
+    }
+
+    /* Infinite scrolling track */
+    .reel-wrapper {
+      overflow: hidden;
+      position: relative;
+      /* fade edges */
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+
+    .reel-track {
+      display: flex;
+      gap: 1.5rem;
+      width: max-content;
+      animation: scrollReel 28s linear infinite;
+    }
+
+    .reel-track:hover {
+      animation-play-state: paused;
+    }
+
+    .reel-card {
+      flex: 0 0 280px;
+      height: 200px;
+      border-radius: 1rem;
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1.5rem;
+      transition: transform 0.25s, box-shadow 0.25s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reel-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: inherit;
+    }
+
+    .reel-card:hover::before {
+      opacity: 0.15;
+    }
+
+    .reel-card:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .reel-card .icon {
+      font-size: 2.25rem;
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .reel-card .label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .reel-card .sub {
+      font-size: 0.8rem;
+      color: #a1a1b5;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Features grid ── */
+    .features {
+      padding: 2rem 1.5rem 5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 1rem;
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .feature-card .fi {
+      font-size: 1.75rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .feature-card p {
+      font-size: 0.875rem;
+      color: #a1a1b5;
+      line-height: 1.5;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: #555570;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* ── Keyframes ── */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scrollReel {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="badge">✨ New Course</span>
+    <h1>Sofía Course Promo</h1>
+    <p>Master real-world skills through hands-on projects, live feedback, and a community that keeps you accountable.</p>
+    <button class="cta-btn">Enroll Now →</button>
+  </section>
+
+  <!-- Animated Reel -->
+  <section class="reel-section">
+    <h2>Animated Reel</h2>
+    <div class="reel-wrapper">
+      <div class="reel-track" id="reelTrack">
+        <!-- Cards duplicated for seamless loop -->
+        <div class="reel-card">
+          <span class="icon">🎬</span>
+          <span class="label">Video Lessons</span>
+          <span class="sub">HD, on-demand content</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🧩</span>
+          <span class="label">Interactive Exercises</span>
+          <span class="sub">Learn by doing</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">📐</span>
+          <span class="label">Project-Based</span>
+          <span class="sub">Build a real portfolio</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">💬</span>
+          <span class="label">Live Q&amp;A</span>
+          <span class="sub">Weekly sessions with Sofía</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🏆</span>
+          <span class="label">Certificate</span>
+          <span class="sub">Share on LinkedIn</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🌍</span>
+          <span class="label">Global Community</span>
+          <span class="sub">Learn alongside peers</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🔄</span>
+          <span class="label">Lifetime Access</span>
+          <span class="sub">Updates included forever</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">⚡</span>
+          <span class="label">Fast Track</span>
+          <span class="sub">From zero to job-ready</span>
+        </div>
+        <!-- Duplicate set for seamless infinite scroll -->
+        <div class="reel-card">
+          <span class="icon">🎬</span>
+          <span class="label">Video Lessons</span>
+          <span class="sub">HD, on-demand content</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🧩</span>
+          <span class="label">Interactive Exercises</span>
+          <span class="sub">Learn by doing</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">📐</span>
+          <span class="label">Project-Based</span>
+          <span class="sub">Build a real portfolio</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">💬</span>
+          <span class="label">Live Q&amp;A</span>
+          <span class="sub">Weekly sessions with Sofía</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🏆</span>
+          <span class="label">Certificate</span>
+          <span class="sub">Share on LinkedIn</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🌍</span>
+          <span class="label">Global Community</span>
+          <span class="sub">Learn alongside peers</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">🔄</span>
+          <span class="label">Lifetime Access</span>
+          <span class="sub">Updates included forever</span>
+        </div>
+        <div class="reel-card">
+          <span class="icon">⚡</span>
+          <span class="label">Fast Track</span>
+          <span class="sub">From zero to job-ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>What You'll Get</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="fi">🎓</span>
+        <h3>Expert Instruction</h3>
+        <p>Learn directly from Sofía — a seasoned practitioner with years of real-world experience.</p>
+      </div>
+      <div class="feature-card">
+        <span class="fi">🗺️</span>
+        <h3>Structured Curriculum</h3>
+        <p>A clear, step-by-step path so you always know exactly what to learn next.</p>
+      </div>
+      <div class="feature-card">
+        <span class="fi">🤝</span>
+        <h3>Peer Community</h3>
+        <p>Join a supportive group of learners to share progress, ask questions, and stay motivated.</p>
+      </div>
+      <div class="feature-card">
+        <span class="fi">📊</span>
+        <h3>Progress Tracking</h3>
+        <p>Visual dashboards keep you on track and celebrate every milestone you hit.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Sofía Course Promo. All rights reserved.
+  </footer>
+
+</body>
+</html>
