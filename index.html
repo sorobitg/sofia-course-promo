@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofía — Animated Course Promo | AI-Powered Brand Storytelling</title>
+  <meta name="description" content="Pixar-style animated course promo. Stop the scroll, increase engagement, and convert viewers into buyers with character-driven content." />
+  <meta property="og:title" content="Sofía — Animated Course Promo" />
+  <meta property="og:description" content="Pixar-style animated course promo for Instagram Reels. AI-Powered Brand Storytelling + Performance Design." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated starfield background -->
+  <canvas id="stars-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══ Navigation ══════════════════════════════════════════ -->
+  <nav aria-label="Main navigation">
+    <a class="nav-logo" href="#">✦ Sofía</a>
+    <ul class="nav-links">
+      <li><a href="#character">Character</a></li>
+      <li><a href="#reel">Reel</a></li>
+      <li><a href="#deliverables">Deliverables</a></li>
+      <li><a href="#tools">Tools</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Get Started →</a>
+  </nav>
+
+  <!-- ══ Hero ════════════════════════════════════════════════ -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+
+      <div class="hero-badge" aria-label="New release badge">
+        <span class="dot" aria-hidden="true"></span>
+        Instagram Reels · AI-Powered · High Conversion
+      </div>
+
+      <h1 class="hero-title" id="hero-heading">
+        Meet <span class="gradient-text">Sofía</span> —<br />
+        Your Course Has a<br />
+        <span class="gradient-text">Character Now</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A Pixar-style animated campaign built for Instagram Reels.
+        Stop the scroll. Build emotion. Convert viewers into buyers.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#reel" class="btn-primary">
+          <span aria-hidden="true">▶</span> Watch the Reel
+        </a>
+        <a href="#deliverables" class="btn-secondary">
+          <span aria-hidden="true">📦</span> See Deliverables
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ Character Section ════════════════════════════════════ -->
+  <section id="character" aria-labelledby="character-heading">
+
+    <!-- Sofía SVG Character -->
+    <div class="character-scene" role="img" aria-label="Sofía character illustration">
+      <div class="character-glow" aria-hidden="true"></div>
+
+      <svg class="sofia-svg" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Defs: gradients -->
+        <defs>
+          <radialGradient id="skinGrad" cx="50%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#FDDCB5"/>
+            <stop offset="100%" stop-color="#F5B07A"/>
+          </radialGradient>
+          <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3D1C6E"/>
+            <stop offset="100%" stop-color="#7C3AED"/>
+          </linearGradient>
+          <linearGradient id="outfitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7C3AED"/>
+            <stop offset="50%" stop-color="#EC4899"/>
+            <stop offset="100%" stop-color="#F59E0B"/>
+          </linearGradient>
+          <linearGradient id="glowRing" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#EC4899" stop-opacity="0.2"/>
+          </linearGradient>
+          <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#7C3AED" flood-opacity="0.35"/>
+          </filter>
+        </defs>
+
+        <!-- Ground glow -->
+        <ellipse cx="160" cy="400" rx="90" ry="14" fill="url(#glowRing)"/>
+
+        <!-- Body / Outfit (dress-like jacket) -->
+        <path d="M95 280 Q80 340 85 390 L235 390 Q240 340 225 280 Q200 260 160 258 Q120 260 95 280Z"
+              fill="url(#outfitGrad)" filter="url(#softShadow)"/>
+
+        <!-- Collar detail -->
+        <path d="M140 265 Q160 285 180 265 L185 280 Q160 298 135 280Z" fill="rgba(255,255,255,0.25)"/>
+
+        <!-- Arms -->
+        <ellipse cx="82" cy="310" rx="17" ry="48" fill="url(#outfitGrad)" transform="rotate(-10 82 310)"/>
+        <ellipse cx="238" cy="310" rx="17" ry="48" fill="url(#outfitGrad)" transform="rotate(10 238 310)"/>
+
+        <!-- Hands -->
+        <ellipse cx="70" cy="356" rx="16" ry="14" fill="url(#skinGrad)"/>
+        <ellipse cx="250" cy="356" rx="16" ry="14" fill="url(#skinGrad)"/>
+
+        <!-- Neck -->
+        <rect x="146" y="232" width="28" height="34" rx="12" fill="url(#skinGrad)"/>
+
+        <!-- Head -->
+        <ellipse cx="160" cy="185" rx="68" ry="72" fill="url(#skinGrad)" filter="url(#softShadow)"/>
+
+        <!-- Hair back -->
+        <ellipse cx="160" cy="175" rx="72" ry="74" fill="url(#hairGrad)"/>
+
+        <!-- Hair front / fringe -->
+        <path d="M92 158 Q100 110 140 100 Q160 96 180 100 Q220 110 228 158
+                 Q210 140 190 138 Q174 135 160 136 Q146 135 130 138 Q110 140 92 158Z"
+              fill="url(#hairGrad)"/>
+
+        <!-- Hair flow behind shoulders -->
+        <path d="M92 175 Q72 220 80 270 Q96 260 104 235 Q110 210 106 185Z"
+              fill="url(#hairGrad)"/>
+        <path d="M228 175 Q248 220 240 270 Q224 260 216 235 Q210 210 214 185Z"
+              fill="url(#hairGrad)"/>
+
+        <!-- Face: Eyes -->
+        <!-- Left eye white -->
+        <ellipse cx="136" cy="180" rx="15" ry="16" fill="white"/>
+        <!-- Left iris -->
+        <ellipse cx="136" cy="182" rx="10" ry="11" fill="#3D1C6E"/>
+        <!-- Left pupil -->
+        <ellipse cx="136" cy="183" rx="6"  ry="7"  fill="#0F0A1E"/>
+        <!-- Left eye shine -->
+        <ellipse cx="139" cy="179" rx="3"  ry="3.5" fill="white" opacity="0.9"/>
+
+        <!-- Right eye white -->
+        <ellipse cx="184" cy="180" rx="15" ry="16" fill="white"/>
+        <!-- Right iris -->
+        <ellipse cx="184" cy="182" rx="10" ry="11" fill="#3D1C6E"/>
+        <!-- Right pupil -->
+        <ellipse cx="184" cy="183" rx="6"  ry="7"  fill="#0F0A1E"/>
+        <!-- Right eye shine -->
+        <ellipse cx="187" cy="179" rx="3"  ry="3.5" fill="white" opacity="0.9"/>
+
+        <!-- Eyelashes top -->
+        <path d="M121 168 Q130 162 136 165" stroke="#1A1033" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M199 168 Q190 162 184 165" stroke="#1A1033" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+        <!-- Eyebrows -->
+        <path d="M120 163 Q136 155 150 160" stroke="#3D1C6E" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+        <path d="M200 163 Q184 155 170 160" stroke="#3D1C6E" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+        <!-- Nose -->
+        <path d="M157 192 Q154 205 160 210 Q166 205 163 192" stroke="#E8906A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+        <!-- Mouth (smile) -->
+        <path d="M144 222 Q160 236 176 222" stroke="#C0605A" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- Lips -->
+        <path d="M144 222 Q152 226 160 225 Q168 226 176 222 Q168 230 160 231 Q152 230 144 222Z"
+              fill="#E8706A" opacity="0.7"/>
+
+        <!-- Cheek blush -->
+        <ellipse cx="118" cy="205" rx="12" ry="8" fill="#FFAAAA" opacity="0.35"/>
+        <ellipse cx="202" cy="205" rx="12" ry="8" fill="#FFAAAA" opacity="0.35"/>
+
+        <!-- Star sparkles around character -->
+        <g opacity="0.9">
+          <!-- Animated star 1 -->
+          <g transform="translate(48, 120)">
+            <animateTransform attributeName="transform" type="rotate" from="0 48 120" to="360 48 120" dur="8s" repeatCount="indefinite"/>
+            <path d="M48,108 L50,116 L58,118 L50,120 L48,128 L46,120 L38,118 L46,116Z" fill="#F59E0B" opacity="0.85"/>
+          </g>
+          <!-- Animated star 2 -->
+          <g transform="translate(272, 145)">
+            <animateTransform attributeName="transform" type="rotate" from="360 272 145" to="0 272 145" dur="6s" repeatCount="indefinite"/>
+            <path d="M272,137 L273.5,143 L280,144.5 L273.5,146 L272,152 L270.5,146 L264,144.5 L270.5,143Z" fill="#EC4899" opacity="0.85"/>
+          </g>
+          <!-- Animated star 3 -->
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="55,230; 50,210; 55,230" dur="4s" repeatCount="indefinite"/>
+            <circle cx="55" cy="230" r="4" fill="#A78BFA" opacity="0.75"/>
+          </g>
+          <!-- Animated star 4 -->
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="265,270; 270,255; 265,270" dur="3.5s" repeatCount="indefinite"/>
+            <circle cx="265" cy="270" r="3.5" fill="#7C3AED" opacity="0.75"/>
+          </g>
+        </g>
+
+        <!-- Floating heart above head -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="2.5s" repeatCount="indefinite"/>
+          <path d="M160,68 C160,68 148,56 142,62 C136,68 142,76 160,86 C178,76 184,68 178,62 C172,56 160,68 160,68Z"
+                fill="url(#outfitGrad)" opacity="0.9"/>
+        </g>
+
+      </svg>
+    </div>
+
+    <!-- Info -->
+    <div class="character-info">
+      <span class="section-label">Your Brand Character</span>
+      <h2 id="character-heading">
+        She's <span class="gradient-text">Sofía</span>.<br />
+        She tells your story.
+      </h2>
+      <p>
+        A Pixar-inspired animated character designed to carry your brand's
+        emotion, personality, and message through every piece of content —
+        from 15-second reels to full carousel campaigns.
+      </p>
+      <div class="traits" role="list" aria-label="Character traits">
+        <span class="trait" role="listitem">✨ Expressive</span>
+        <span class="trait" role="listitem">🎯 Conversion-focused</span>
+        <span class="trait" role="listitem">🎬 Animated</span>
+        <span class="trait" role="listitem">💜 Relatable</span>
+        <span class="trait" role="listitem">📱 Instagram-native</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══ Stats ════════════════════════════════════════════════ -->
+  <section id="stats" aria-labelledby="stats-heading">
+    <h2 id="stats-heading" class="visually-hidden">Campaign metrics</h2>
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="number" data-count="3" data-suffix="×" aria-label="3x more engagement">3×</span>
+        <span class="label">More Engagement</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="number" data-count="15" data-suffix="s" aria-label="15-second reel">15s</span>
+        <span class="label">Animated Reel</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="number" data-count="8" data-suffix="+" aria-label="8+ deliverables">8+</span>
+        <span class="label">Deliverables</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="number" data-count="100" data-suffix="%" aria-label="100% AI-powered">100%</span>
+        <span class="label">AI-Powered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Reel Preview ═════════════════════════════════════════ -->
+  <section id="reel" aria-labelledby="reel-heading">
+    <div class="reel-container reveal">
+      <span class="section-label">🎬 15-Second Reel</span>
+      <h2 id="reel-heading">
+        Content that <span class="gradient-text">stops the scroll</span>
+      </h2>
+      <p class="sub">
+        Hit play to preview the animated reel concept — built for Instagram Reels format.
+      </p>
+
+      <!-- Phone mockup -->
+      <div class="phone-frame" role="region" aria-label="Instagram Reel preview phone mockup">
+        <div class="phone-notch" aria-hidden="true"></div>
+
+        <div class="reel-screen" id="reel-screen">
+          <button class="reel-play-btn" id="reel-play-btn" aria-label="Play animated reel preview">▶</button>
+          <p class="reel-text" style="transition: opacity .25s ease;">
+            Tap to preview<br/>the reel ✨
+          </p>
+
+          <!-- Side engagement stats (Instagram-style) -->
+          <div class="reel-stats" role="group" aria-label="Reel engagement stats">
+            <div class="reel-stat" aria-label="Likes">
+              ❤️<span>24.6K</span>
+            </div>
+            <div class="reel-stat" aria-label="Comments">
+              💬<span>1.2K</span>
+            </div>
+            <div class="reel-stat" aria-label="Shares">
+              ↗️<span>8.4K</span>
+            </div>
+            <div class="reel-stat" aria-label="Save">
+              🔖<span>3.1K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ Deliverables Carousel ════════════════════════════════ -->
+  <section id="deliverables" aria-labelledby="deliverables-heading">
+    <span class="section-label">📦 What You Get</span>
+    <h2 id="deliverables-heading" class="reveal">
+      Everything you need to<br /><span class="gradient-text">launch your campaign</span>
+    </h2>
+    <p class="sub reveal">Drag to explore all deliverables →</p>
+
+    <div class="carousel-track" role="list" aria-label="Campaign deliverables">
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">🎬</span>
+        <h3>15-Second Animated Reel</h3>
+        <p>Pixar-style character animation optimized for Instagram Reels with captions and music sync.</p>
+        <span class="tag">MP4 · 9:16</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">🎭</span>
+        <h3>Branded Character — Sofía</h3>
+        <p>Custom animated character with 6+ expressions, outfit variants, and brand-matched palette.</p>
+        <span class="tag">SVG · PNG · Animated</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">🖼️</span>
+        <h3>Instagram Carousel System</h3>
+        <p>5-slide carousel template with storytelling arc, CTA slide, and engagement hooks.</p>
+        <span class="tag">Canva · Figma</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">🎨</span>
+        <h3>Visual Identity System</h3>
+        <p>Color palette, typography scale, icon set, and brand guidelines tailored to your course niche.</p>
+        <span class="tag">Brand Kit</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">📱</span>
+        <h3>Social Media Assets</h3>
+        <p>Profile picture, story highlights cover, grid templates, and Reel cover frames.</p>
+        <span class="tag">10+ Files</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">📋</span>
+        <h3>Content Strategy Guide</h3>
+        <p>30-day posting calendar, caption templates, hashtag banks, and engagement scripts.</p>
+        <span class="tag">PDF Guide</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">🔊</span>
+        <h3>Audio Branding Pack</h3>
+        <p>3 royalty-free music tracks curated for your brand tone, plus a 3-second audio logo.</p>
+        <span class="tag">MP3 · WAV</span>
+      </div>
+
+      <div class="card reveal" role="listitem">
+        <span class="card-icon" aria-hidden="true">📊</span>
+        <h3>Analytics Dashboard</h3>
+        <p>Notion template to track Reel performance, follower growth, and conversion metrics weekly.</p>
+        <span class="tag">Notion Template</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ Tools ════════════════════════════════════════════════ -->
+  <section id="tools" aria-labelledby="tools-heading">
+    <span class="section-label">🛠 Built With</span>
+    <h2 id="tools-heading" class="reveal">
+      Powered by the best<br /><span class="gradient-text">creative tools</span>
+    </h2>
+    <p class="sub reveal">
+      A modern AI-assisted design workflow for faster, higher-quality output.
+    </p>
+
+    <div class="tools-grid">
+      <div class="tool-card reveal">
+        <div class="tool-icon" aria-hidden="true">🤖</div>
+        <h3>AI Design System</h3>
+        <p>Midjourney + ChatGPT for concept generation, character design, and copy.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" aria-hidden="true">🎞️</div>
+        <h3>CapCut Animation</h3>
+        <p>Frame-by-frame animation, transitions, and text effects for Reels.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" aria-hidden="true">📐</div>
+        <h3>Figma / Canva</h3>
+        <p>Pixel-perfect carousel slides and brand asset production at scale.</p>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" aria-hidden="true">📣</div>
+        <h3>Social Strategy Framework</h3>
+        <p>Hooks, storytelling arcs, and CTAs engineered for maximum conversion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Key Insight ══════════════════════════════════════════ -->
+  <section id="insight" aria-labelledby="insight-heading">
+    <h2 id="insight-heading" class="visually-hidden">Key insight</h2>
+    <blockquote class="insight-quote reveal">
+      "People don't engage with content —<br />
+      they engage with
+      <strong>characters + emotion + motion</strong>"
+    </blockquote>
+    <p class="insight-attribution reveal">
+      — The Sofía Campaign Framework
+    </p>
+  </section>
+
+  <!-- ══ CTA ══════════════════════════════════════════════════ -->
+  <section id="cta" aria-labelledby="cta-heading">
+    <div class="cta-box reveal">
+      <span class="section-label">🚀 Ready to Launch?</span>
+      <h2 id="cta-heading">
+        Give your course a<br />
+        <span class="gradient-text">character it deserves</span>
+      </h2>
+      <p>
+        Join course creators using Sofía to stop the scroll,<br />
+        build emotional connection, and convert at scale.
+      </p>
+      <div class="hero-actions">
+        <a href="#character" class="btn-primary">
+          <span aria-hidden="true">✦</span> Start Your Campaign
+        </a>
+        <a href="#deliverables" class="btn-secondary">
+          <span aria-hidden="true">📦</span> View Deliverables
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Footer ═══════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      Built as a modern example of
+      <strong>AI-powered brand storytelling + performance design</strong>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/sorobitg/sofia-course-promo">GitHub</a>
+    </p>
+    <p style="margin-top:.5rem; font-size:.75rem; opacity:.5;">
+      © 2024 Sofía Course Promo · Open source under MIT
+    </p>
+  </footer>
+
+  <!-- Visually hidden utility class for screen readers -->
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+
+  <script src="script.js"></script>
+</body>
+</html>
