@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#f5ede0"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#c9a96e"/>
+  <text x="60" y="100" font-family="Arial,sans-serif" font-size="36" fill="#c9a96e" font-weight="bold">06</text>
+  <text x="540" y="200" font-family="Arial,sans-serif" font-size="68" font-weight="900" fill="#3d2b1f" text-anchor="middle">Perfect for</text>
+  <text x="540" y="290" font-family="Arial,sans-serif" font-size="68" font-weight="900" fill="#c9562a" text-anchor="middle" font-style="italic">Creators &amp; Entrepreneurs</text>
+  <!-- 3 audience cards -->
+  <rect x="60" y="360" width="300" height="320" rx="24" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="210" cy="440" r="50" fill="#f0c040" opacity="0.6"/>
+  <text x="210" y="455" font-family="Arial,sans-serif" font-size="40" text-anchor="middle">📢</text>
+  <text x="210" y="550" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#3d2b1f" text-anchor="middle">Social Media</text>
+  <text x="210" y="590" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#3d2b1f" text-anchor="middle">Marketers</text>
+  <rect x="390" y="360" width="300" height="320" rx="24" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="540" cy="440" r="50" fill="#c9562a" opacity="0.3"/>
+  <text x="540" y="455" font-family="Arial,sans-serif" font-size="40" text-anchor="middle">🏪</text>
+  <text x="540" y="550" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#3d2b1f" text-anchor="middle">Small Business</text>
+  <text x="540" y="590" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#3d2b1f" text-anchor="middle">Owners</text>
+  <rect x="720" y="360" width="300" height="320" rx="24" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="870" cy="440" r="50" fill="#3d9e5f" opacity="0.3"/>
+  <text x="870" y="455" font-family="Arial,sans-serif" font-size="40" text-anchor="middle">🎓</text>
+  <text x="870" y="550" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#3d2b1f" text-anchor="middle">Course Creators</text>
+  <text x="870" y="590" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#3d2b1f" text-anchor="middle">&amp; Coaches</text>
+  <!-- CTA banner -->
+  <rect x="180" y="740" width="720" height="100" rx="20" fill="#c9a96e"/>
+  <text x="540" y="800" font-family="Arial,sans-serif" font-size="40" font-weight="bold" fill="#fff" text-anchor="middle" font-style="italic">Level Up Your Content Game! ⭐</text>
+  <text x="540" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#b8956a" text-anchor="middle">0:10 – 0:12</text>
+</svg>

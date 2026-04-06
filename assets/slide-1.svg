@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#f5ede0"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#c9a96e"/>
+  <text x="60" y="100" font-family="Arial,sans-serif" font-size="36" fill="#c9a96e" font-weight="bold">01</text>
+  <text x="60" y="200" font-family="Arial,sans-serif" font-size="80" font-weight="900" fill="#3d2b1f">Master</text>
+  <text x="60" y="300" font-family="Arial,sans-serif" font-size="80" font-weight="900" fill="#3d2b1f">Scroll-Stopping</text>
+  <text x="60" y="400" font-family="Arial,sans-serif" font-size="80" font-weight="900" fill="#3d2b1f">Graphics</text>
+  <text x="60" y="480" font-family="Arial,sans-serif" font-size="36" fill="#7a5c3f">Create Eye-Catching Content</text>
+  <text x="60" y="525" font-family="Arial,sans-serif" font-size="36" fill="#7a5c3f">That Converts</text>
+  <circle cx="840" cy="500" r="300" fill="#c9a96e" opacity="0.3"/>
+  <text x="540" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#b8956a" text-anchor="middle">0:00 – 0:02</text>
+</svg>

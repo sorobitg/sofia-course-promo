@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#f5ede0"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#c9a96e"/>
+  <text x="60" y="100" font-family="Arial,sans-serif" font-size="36" fill="#c9a96e" font-weight="bold">03</text>
+  <text x="540" y="200" font-family="Arial,sans-serif" font-size="64" font-weight="900" fill="#3d2b1f" text-anchor="middle">Learn the</text>
+  <text x="540" y="280" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="#c9562a" text-anchor="middle">3 Secrets</text>
+  <text x="540" y="360" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#3d2b1f" text-anchor="middle">That Change Everything</text>
+  <!-- Secret 1 -->
+  <rect x="80" y="420" width="920" height="140" rx="20" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="160" cy="490" r="40" fill="#f0c040"/>
+  <text x="220" y="480" font-family="Arial,sans-serif" font-size="38" font-weight="bold" fill="#3d2b1f">Eye-Catching Design</text>
+  <text x="220" y="528" font-family="Arial,sans-serif" font-size="30" fill="#7a5c3f">Stand out in a crowded feed</text>
+  <!-- Secret 2 -->
+  <rect x="80" y="580" width="920" height="140" rx="20" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="160" cy="650" r="40" fill="#c9562a"/>
+  <text x="220" y="640" font-family="Arial,sans-serif" font-size="38" font-weight="bold" fill="#3d2b1f">Scrolling Stoppers</text>
+  <text x="220" y="688" font-family="Arial,sans-serif" font-size="30" fill="#7a5c3f">Hooks that grab attention in seconds</text>
+  <!-- Secret 3 -->
+  <rect x="80" y="740" width="920" height="140" rx="20" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="160" cy="810" r="40" fill="#e05c8a"/>
+  <text x="220" y="800" font-family="Arial,sans-serif" font-size="38" font-weight="bold" fill="#3d2b1f">Engagement Boosters</text>
+  <text x="220" y="848" font-family="Arial,sans-serif" font-size="30" fill="#7a5c3f">Turn viewers into fans (and customers)</text>
+  <text x="540" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#b8956a" text-anchor="middle">0:04 – 0:06</text>
+</svg>

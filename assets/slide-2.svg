@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#f5ede0"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#c9a96e"/>
+  <text x="60" y="100" font-family="Arial,sans-serif" font-size="36" fill="#c9a96e" font-weight="bold">02</text>
+  <text x="540" y="280" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="#3d2b1f" text-anchor="middle">Tired of</text>
+  <text x="540" y="370" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="#3d2b1f" text-anchor="middle">Creating Posts</text>
+  <text x="540" y="460" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="#3d2b1f" text-anchor="middle">That Get</text>
+  <text x="540" y="560" font-family="Arial,sans-serif" font-size="90" font-weight="900" fill="#c9562a" text-anchor="middle" font-style="italic">Ignored?</text>
+  <rect x="240" y="640" width="600" height="140" rx="20" fill="#fff8f0" stroke="#c9a96e" stroke-width="3"/>
+  <text x="540" y="700" font-family="Arial,sans-serif" font-size="38" fill="#7a5c3f" text-anchor="middle">You're not alone.</text>
+  <text x="540" y="748" font-family="Arial,sans-serif" font-size="38" fill="#7a5c3f" text-anchor="middle">Let's fix that.</text>
+  <text x="540" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#b8956a" text-anchor="middle">0:02 – 0:04</text>
+</svg>

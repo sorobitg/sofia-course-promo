@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <rect width="1080" height="1080" fill="#f5ede0"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#c9a96e"/>
+  <text x="60" y="100" font-family="Arial,sans-serif" font-size="36" fill="#c9a96e" font-weight="bold">05</text>
+  <text x="540" y="200" font-family="Arial,sans-serif" font-size="70" font-weight="900" fill="#3d2b1f" text-anchor="middle">Step-by-Step Tutorials</text>
+  <text x="540" y="280" font-family="Arial,sans-serif" font-size="46" fill="#7a5c3f" text-anchor="middle" font-style="italic">At Your Own Pace</text>
+  <!-- Checklist items -->
+  <rect x="80" y="360" width="580" height="100" rx="16" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="150" cy="410" r="26" fill="#3d9e5f"/>
+  <text x="200" y="420" font-family="Arial,sans-serif" font-size="38" fill="#3d2b1f" font-weight="bold">✓</text>
+  <text x="250" y="420" font-family="Arial,sans-serif" font-size="36" fill="#3d2b1f">Proven Methods</text>
+  <rect x="80" y="480" width="580" height="100" rx="16" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="150" cy="530" r="26" fill="#3d9e5f"/>
+  <text x="200" y="540" font-family="Arial,sans-serif" font-size="38" fill="#3d2b1f" font-weight="bold">✓</text>
+  <text x="250" y="540" font-family="Arial,sans-serif" font-size="36" fill="#3d2b1f">Real-Time Demos</text>
+  <rect x="80" y="600" width="580" height="100" rx="16" fill="#fff8f0" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="150" cy="650" r="26" fill="#3d9e5f"/>
+  <text x="200" y="660" font-family="Arial,sans-serif" font-size="38" fill="#3d2b1f" font-weight="bold">✓</text>
+  <text x="250" y="660" font-family="Arial,sans-serif" font-size="36" fill="#3d2b1f">Lifetime Access</text>
+  <text x="540" y="1020" font-family="Arial,sans-serif" font-size="28" fill="#b8956a" text-anchor="middle">0:08 – 0:10</text>
+</svg>
